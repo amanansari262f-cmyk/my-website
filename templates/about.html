@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %}About · AI Health Assistant{% endblock %}
+{% block content %}
+<section class="wrap page-narrow">
+  <span class="eyebrow">About</span>
+  <h1 class="page-h">How the assistant <span class="grad">works</span></h1>
+  <div class="glass prose">
+    <p>AI Health Assistant reads your symptoms in plain English or Hinglish, matches them against a curated knowledge base of {{ total_conditions }} common conditions, and returns easy-to-follow self-care steps, warning signs and a short video guide.</p>
+    <h3>What makes it smart</h3>
+    <ul>
+      <li><b>Multi-symptom matching</b> — “fever, cough and sir dard” returns ranked results instead of just the first hit.</li>
+      <li><b>Typo &amp; Hinglish friendly</b> — understands words like <em>bukhar</em>, <em>khansi</em>, <em>pet dard</em> and forgives spelling mistakes.</li>
+      <li><b>Negation aware</b> — “no fever, only cough” ignores the fever.</li>
+      <li><b>Emergency detection</b> — phrases such as chest pain or trouble breathing trigger an urgent banner.</li>
+      <li><b>Voice input, history &amp; wellness tools</b> — speak your symptoms, revisit past checks and calculate BMI or daily water needs.</li>
+    </ul>
+    <h3>Important</h3>
+    <p>This project is for education and awareness only. It is <b>not</b> a medical device and does not provide a diagnosis. Always consult a qualified doctor for medical concerns.</p>
+    <p>Developed by <b>Amaan Abbas</b> &amp; <b>Mohd Aman</b>.</p>
+  </div>
+</section>
+{% endblock %}

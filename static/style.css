@@ -1,0 +1,159 @@
+/* General body setup */
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #dbe9ff, #f0f5ff);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #222;
+}
+
+/* Header */
+.header {
+    background: #0044cc;
+    color: white;
+    padding: 25px 0;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+.header .sub {
+    margin-top: 5px;
+    color: #e0e0e0;
+    font-size: 14px;
+}
+
+/* Container box */
+.container {
+    background: #fff;
+    width: 55%;
+    margin: 50px auto;
+    padding: 35px;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* Intro greeting */
+.intro h2 {
+    color: #0044cc;
+    margin-bottom: 10px;
+}
+.intro p {
+    color: #333;
+    font-size: 16px;
+}
+
+/* Input and button styling */
+.form-box {
+    margin-top: 25px;
+}
+.form-box input {
+    width: 70%;
+    padding: 12px;
+    border: 2px solid #0044cc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.form-box button {
+    background: #0044cc;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 10px;
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Simple hover (clean, not over-animated) */
+.form-box button:hover {
+    background: #002a80;
+    transform: scale(1.05);
+}
+
+/* Result section */
+.result {
+    margin-top: 35px;
+    text-align: left;
+    background: #f7faff;
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 6px solid #0044cc;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.result h3 {
+    color: #0044cc;
+}
+.result h3 span {
+    color: #c62828;
+}
+.result ul {
+    margin-left: 40px;
+    color: #333;
+}
+
+/* Take care message */
+.takecare {
+    text-align: center;
+    color: #007700;
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: 18px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Footer */
+footer {
+    background: #0044cc;
+    color: white;
+    padding: 15px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-size: 14px;
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.2);
+}
+
+/* YouTube button */
+.video-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Doctor section (simple version) */
+.doctor-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.doctor-img {
+    width: 150px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.doctor-text {
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Floating animation */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block title %}Diagnosis Result · AI Health Assistant{% endblock %}
+{% block content %}
+<section class="wrap page-narrow">
+  <a class="back" href="{{ url_for('home') }}"><svg class="ic" style="transform:rotate(180deg)"><use href="#i-arrow"/></svg>New check</a>
+  <h1 class="page-h">Your <span class="grad">results</span></h1>
+  {% include '_analysis.html' %}
+</section>
+{% endblock %}

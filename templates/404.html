@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Page not found · AI Health Assistant{% endblock %}
+{% block content %}
+<section class="wrap page-narrow center">
+  <svg class="ecg-flat" viewBox="0 0 400 60" aria-hidden="true"><path d="M0 30h150l10-22 14 44 12-30 8 8h206"/></svg>
+  <h1 class="page-h">404 — <span class="grad">flatline</span></h1>
+  <p class="lead">That page doesn’t exist. Let’s get you back to a healthy route.</p>
+  <a class="btn primary" href="{{ url_for('home') }}">Back to assistant<svg class="ic"><use href="#i-arrow"/></svg></a>
+</section>
+{% endblock %}

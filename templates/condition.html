@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% from '_macros.html' import condition_card %}
+{% block title %}{{ c.disease }} · AI Health Assistant{% endblock %}
+{% block content %}
+<section class="wrap page-narrow">
+  <a class="back" href="{{ url_for('conditions') }}"><svg class="ic" style="transform:rotate(180deg)"><use href="#i-arrow"/></svg>All conditions</a>
+  <div class="cond-stack"><div class="cond-wrap is-on">{{ condition_card(c, 0, show_strength=False, detail_link=False) }}</div></div>
+  {% if related %}
+  <h2 class="sec-h sm">Related in {{ c.category }}</h2>
+  <div class="grid-cards">
+    {% for r in related %}
+    <a class="mini-card" href="{{ url_for('condition', slug=r.slug) }}">
+      <span class="badge-ic cat-{{ r.category|lower|replace(' & ','-')|replace(' ','-') }}"><svg class="ic"><use href="#i-{{ r.icon }}"/></svg></span>
+      <b>{{ r.disease }}</b><small>{{ r.description[:80] }}…</small>
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+</section>
+{% endblock %}

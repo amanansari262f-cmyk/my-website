@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- HERO -->
+<section class="hero">
+  <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <span class="pill glow"><svg class="ic"><use href="#i-sparkle"/></svg>AI symptom checker · English &amp; Hinglish</span>
+      <h1>Feeling off? Get <span class="grad">clear answers</span> in seconds.</h1>
+      <p class="lead">Describe how you feel — type it or say it. Your assistant spots multiple symptoms, flags warning signs and explains what to do next.</p>
+
+      <form action="{{ url_for('diagnosis') }}" method="POST" class="ask" id="askForm" autocomplete="off">
+        <div class="ask-box">
+          <svg class="ic lead-ic"><use href="#i-search"/></svg>
+          <input type="text" name="symptoms" id="symptoms" maxlength="300" required
+                 placeholder="e.g. fever and cough, sir dard, low bp…" aria-label="Describe your symptoms" aria-autocomplete="list" aria-controls="sugg">
+          <button type="button" class="icon-btn mic" id="micBtn" aria-label="Speak your symptoms" hidden><svg class="ic"><use href="#i-mic"/></svg></button>
+          <button type="submit" class="btn primary go"><span>Analyze</span><svg class="ic"><use href="#i-send"/></svg></button>
+          <ul class="sugg" id="sugg" role="listbox" hidden></ul>
+        </div>
+        <div class="chips-row quick" aria-label="Quick symptoms">
+          <span class="chips-lbl">Try:</span>
+          {% for e in examples %}<button type="button" class="chip" data-fill="{{ e }}">{{ e }}</button>{% endfor %}
+        </div>
+      </form>
+
+      <ul class="trust">
+        <li><svg class="ic"><use href="#i-shield"/></svg>Private — nothing stored on our server</li>
+        <li><svg class="ic"><use href="#i-globe"/></svg>Hinglish friendly</li>
+        <li><svg class="ic"><use href="#i-alert"/></svg>Emergency alerts</li>
+      </ul>
+    </div>
+
+    <div class="hero-art" aria-hidden="true">
+      <div class="orb"></div>
+      <div class="ring-spin"></div>
+      <picture>
+        <img class="doc" src="{{ url_for('static', filename='doctor.webp') }}" alt="" width="411" height="1100" fetchpriority="high">
+      </picture>
+      <div class="float f1 glass"><span class="f-ic hr"><svg class="ic"><use href="#i-heart"/></svg></span><div><small>Heart rate</small><b>72 <i>bpm</i></b></div>
+        <svg class="mini-ecg" viewBox="0 0 80 24"><path d="M0 12h22l4-9 6 18 5-12 3 3h40"/></svg></div>
+      <div class="float f2 glass"><span class="f-ic wt"><svg class="ic"><use href="#i-drop"/></svg></span><div><small>Hydration</small><b>82%</b></div></div>
+      <div class="float f3 glass"><span class="f-ic ok"><svg class="ic"><use href="#i-shield"/></svg></span><div><small>Health score</small><b>Good</b></div></div>
+    </div>
+  </div>
+  <svg class="ecg-line" viewBox="0 0 1200 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 40h360l14-30 20 62 18-44 10 12h778"/></svg>
+</section>
+
+<!-- RESULTS -->
+<section class="wrap results-sec" id="resultsSec" hidden>
+  <div id="results" aria-live="polite"></div>
+</section>
+
+<!-- STATS -->
+<section class="wrap stats reveal">
+  <div class="stat"><b data-count="{{ total_conditions }}">{{ total_conditions }}</b><span>Conditions covered</span></div>
+  <div class="stat"><b data-count="{{ total_keywords }}">{{ total_keywords }}</b><span>Symptom keywords</span></div>
+  <div class="stat"><b>2</b><span>Languages understood</span></div>
+  <div class="stat"><b>&lt;1s</b><span>Average response</span></div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="wrap section reveal">
+  <div class="sec-head"><span class="eyebrow">How it works</span><h2 class="sec-h">Three steps to <span class="grad">peace of mind</span></h2></div>
+  <div class="steps">
+    <div class="step glass"><span class="num">01</span><h3>Describe</h3><p>Type or speak your symptoms in your own words — English or Hinglish.</p></div>
+    <div class="step glass"><span class="num">02</span><h3>Analyze</h3><p>Smart matching ranks possible conditions, ignores negated symptoms and checks for red flags.</p></div>
+    <div class="step glass"><span class="num">03</span><h3>Act</h3><p>Get self-care steps, what to avoid, when to see a doctor and a quick video guide.</p></div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section class="wrap section reveal" id="tools">
+  <div class="sec-head"><span class="eyebrow">Wellness tools</span><h2 class="sec-h">Track the <span class="grad">basics</span></h2></div>
+  <div class="tools">
+    <div class="glass tool" id="bmiTool">
+      <div class="tool-h"><span class="badge-ic cat-heart-bp"><svg class="ic"><use href="#i-scale"/></svg></span><h3>BMI calculator</h3></div>
+      <div class="fields">
+        <label>Height (cm)<input type="number" id="bmiH" min="50" max="250" inputmode="decimal" placeholder="170"></label>
+        <label>Weight (kg)<input type="number" id="bmiW" min="10" max="300" inputmode="decimal" placeholder="65"></label>
+      </div>
+      <div class="gauge" aria-live="polite">
+        <div class="gauge-bar"><i class="n" id="bmiNeedle"></i></div>
+        <div class="gauge-scale"><span>Under</span><span>Healthy</span><span>Over</span><span>Obese</span></div>
+        <p class="gauge-out" id="bmiOut">Enter your height and weight.</p>
+      </div>
+    </div>
+    <div class="glass tool" id="waterTool">
+      <div class="tool-h"><span class="badge-ic cat-diabetes"><svg class="ic"><use href="#i-drop"/></svg></span><h3>Daily water goal</h3></div>
+      <div class="fields">
+        <label>Weight (kg)<input type="number" id="wtW" min="10" max="300" inputmode="decimal" placeholder="65"></label>
+        <label>Activity
+          <select id="wtA"><option value="0">Light</option><option value="0.5" selected>Moderate</option><option value="1">Very active</option></select></label>
+      </div>
+      <div class="water">
+        <div class="glass-water"><i id="waterFill"></i></div>
+        <div><p class="big" id="waterOut">— L</p><p class="muted" id="waterSub">About 35 ml per kg, plus extra for activity.</p></div>
+      </div>
+    </div>
+    <div class="glass tool history" id="historyTool">
+      <div class="tool-h"><span class="badge-ic cat-infection"><svg class="ic"><use href="#i-clock"/></svg></span><h3>Recent checks</h3>
+        <button type="button" class="icon-btn sm" id="clearHist" aria-label="Clear history" hidden><svg class="ic"><use href="#i-trash"/></svg></button></div>
+      <ul id="histList" class="hist"></ul>
+      <p class="muted" id="histEmpty">Your last checks appear here. They’re saved only in this browser.</p>
+    </div>
+  </div>
+</section>
+
+<!-- POPULAR -->
+<section class="wrap section reveal">
+  <div class="sec-head row"><div><span class="eyebrow">Popular</span><h2 class="sec-h">Common <span class="grad">concerns</span></h2></div>
+    <a class="btn ghost sm" href="{{ url_for('conditions') }}">View all<svg class="ic"><use href="#i-arrow"/></svg></a></div>
+  <div class="grid-cards">
+    {% for c in popular %}
+    <a class="mini-card" href="{{ url_for('condition', slug=c.slug) }}">
+      <span class="badge-ic cat-{{ c.category|lower|replace(' & ','-')|replace(' ','-') }}"><svg class="ic"><use href="#i-{{ c.icon }}"/></svg></span>
+      <b>{{ c.key|title }}</b><small>{{ c.disease }}</small>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,56 @@
+{% from '_macros.html' import condition_card %}
+<div class="analysis" data-query="{{ analysis.query }}">
+  <div class="analysis-top">
+    <div>
+      <span class="eyebrow">Analysis for</span>
+      <p class="query">“{{ analysis.query }}”</p>
+    </div>
+    {% if analysis.detected %}
+    <div class="detected">
+      <span class="eyebrow">Symptoms detected</span>
+      <div class="chips-row">{% for d in analysis.detected %}<span class="chip static">{{ d }}</span>{% endfor %}</div>
+    </div>
+    {% endif %}
+  </div>
+
+  {% if analysis.flags %}
+  <div class="emergency" role="alert">
+    <span class="em-ic"><svg class="ic"><use href="#i-alert"/></svg></span>
+    <div>
+      <h3>This may need urgent medical attention</h3>
+      <p>We noticed: <strong>{{ analysis.flags|join(', ') }}</strong>. Please don’t wait for an online tool — contact emergency services or go to the nearest hospital now.</p>
+    </div>
+    <a class="btn danger" href="tel:112"><svg class="ic"><use href="#i-phone"/></svg>Call 112</a>
+  </div>
+  {% endif %}
+
+  {% if analysis.results %}
+    {% if analysis.results|length > 1 %}
+    <div class="switcher" role="tablist" aria-label="Possible conditions">
+      {% for c in analysis.results %}
+      <button type="button" role="tab" class="sw {{ 'is-on' if loop.first }}" data-switch="{{ loop.index0 }}">
+        <span class="sw-name">{{ c.key|title }}</span><span class="sw-pct">{{ c.strength }}%</span>
+        <span class="sw-bar"><i style="--w: {{ c.strength }}%"></i></span>
+      </button>
+      {% endfor %}
+    </div>
+    {% endif %}
+    <div class="cond-stack">
+      {% for c in analysis.results %}
+        <div class="cond-wrap {{ 'is-on' if loop.first }}" data-wrap="{{ loop.index0 }}">{{ condition_card(c, loop.index0) }}</div>
+      {% endfor %}
+    </div>
+    <p class="fine">Match strength shows how closely your words fit each condition’s typical symptoms — it is not a medical probability. Medicines named are common examples only; confirm doses with a doctor or pharmacist.</p>
+  {% else %}
+    <div class="empty">
+      <div class="empty-art"><svg class="ic"><use href="#i-search"/></svg></div>
+      <h3>We couldn’t match that to a known condition</h3>
+      <p>Try simple words like <em>fever</em>, <em>cough</em>, <em>pet dard</em> or <em>low bp</em>. You can describe more than one symptom at once.</p>
+      <ul class="checks ok">
+        <li><svg class="ic"><use href="#i-check"/></svg><span>Stay calm, rest and keep hydrated.</span></li>
+        <li><svg class="ic"><use href="#i-check"/></svg><span>Consult a doctor if symptoms are severe or persistent.</span></li>
+      </ul>
+      <a class="btn ghost sm" href="{{ url_for('conditions') }}">Browse all conditions<svg class="ic"><use href="#i-arrow"/></svg></a>
+    </div>
+  {% endif %}
+</div>

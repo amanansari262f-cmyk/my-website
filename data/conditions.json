@@ -1,0 +1,716 @@
+[
+  {
+    "key": "fever",
+    "slug": "fever",
+    "disease": "Common Cold or Viral Fever",
+    "description": "A fever is a temporary increase in body temperature, often due to an infection.",
+    "precautions": [
+      "Drink plenty of fluids.",
+      "Take rest and avoid exertion.",
+      "Wipe your body with lukewarm water to help reduce temperature.",
+      "Take paracetamol for high fever.",
+      "Avoid oily and spicy foods.",
+      "Do not sit directly under AC or in cold air.",
+      "Wash your hands regularly to prevent spreading infection, especially in viral fever.",
+      "Eat light and healthy food (like khichdi, lentils, fruits and dry fruits)",
+      "Consult a doctor if fever lasts more than 3 days."
+    ],
+    "video": "https://youtube.com/shorts/78zYCGGQ7xg?si=sAqOPnQPmuClMpN3",
+    "category": "Infection",
+    "severity": 1,
+    "icon": "thermometer",
+    "keywords": [
+      "fever",
+      "bukhar",
+      "bukhaar",
+      "taap",
+      "high temperature",
+      "body heat",
+      "temperature",
+      "chills"
+    ],
+    "see_doctor": [
+      "Fever above 103°F (39.4°C) or lasting more than 3 days",
+      "Severe headache, stiff neck or confusion",
+      "Rash, breathing trouble or persistent vomiting",
+      "Fever in infants under 3 months"
+    ]
+  },
+  {
+    "key": "cough",
+    "slug": "cough",
+    "disease": "Respiratory Infection or Allergic Cough",
+    "description": "Coughing helps clear your airways but persistent coughs may indicate infection.",
+    "precautions": [
+      "Drink warm fluids and honey with ginger.",
+      "Avoid cold or dusty environments.",
+      "Use cough syrup if necessary.",
+      "Stay away from ice cream, cold drinks and refrigerated foods and water.",
+      "Take steam 1-2 times a day to clear congestion and ease breathing.",
+      "When coughing,use tissue or elbow to prevent spreading infections.",
+      "Proper sleep helps your immune system recover faster.",
+      "Use a scarf and avoid sudden temperature changes.",
+      "A spoon of honey can reduce throat irritation and calm coughing.",
+      "Consult a doctor if cough persists for more than 2 weeks."
+    ],
+    "video": "https://youtube.com/shorts/WBmMCG1m9oE?si=VnEZm3ND3um5ysC9",
+    "category": "Respiratory",
+    "severity": 1,
+    "icon": "lungs",
+    "keywords": [
+      "cough",
+      "khansi",
+      "khaansi",
+      "dry cough",
+      "wet cough",
+      "coughing"
+    ],
+    "see_doctor": [
+      "Cough lasting more than 2 weeks",
+      "Coughing up blood or yellow-green phlegm",
+      "Shortness of breath or wheezing",
+      "High fever along with cough"
+    ]
+  },
+  {
+    "key": "vomiting",
+    "slug": "vomiting",
+    "disease": "Food Poisoning or Stomach Infection",
+    "description": "Vomiting can occur due to food poisoning or digestive problems.",
+    "precautions": [
+      "Drink small amounts of clean water frequently.",
+      "Take small sips of ORS or coconut water frequently to prevent dehydration.",
+      "Doctors may suggest medicines like Ondansetron.",
+      "Lie down and avoid sudden movements.",
+      "Sip ginger tea or use ginger can help to reduce nausea naturally.",
+      "Avoid strong smells.",
+      "Wash your hands properly to avoid infections.",
+      "Avoid oily and spicy food.",
+      "Eat light foods like rice or bananas.",
+      "Consult a doctor if it continues for 24 hours."
+    ],
+    "video": "https://youtube.com/shorts/n3qBsU1E7yg?si=04Rux6T_FJEWikNP",
+    "category": "Digestive",
+    "severity": 2,
+    "icon": "stomach",
+    "keywords": [
+      "vomiting",
+      "vomit",
+      "vomitting",
+      "ulti",
+      "nausea",
+      "nauseous",
+      "puking",
+      "throwing up"
+    ],
+    "see_doctor": [
+      "Vomiting continues beyond 24 hours",
+      "Blood in vomit or severe belly pain",
+      "Signs of dehydration: dark urine, dry mouth, dizziness",
+      "Unable to keep even water down"
+    ]
+  },
+  {
+    "key": "headache",
+    "slug": "headache",
+    "disease": "Migraine or Tension Headache",
+    "description": "A headache can be caused by stress or dehydration.",
+    "precautions": [
+      "Get enough rest.",
+      "Stay hydrated.",
+      "Avoid bright lights.",
+      "Mild over-the-counter pain relievers like paracetamol may help.",
+      "Reduce time on laptop/phones to avoid eye strain.",
+      "Avoid unnecessary use of phone.",
+      "Rest in a quiet and dark room.",
+      "Maintain proper posture.",
+      "Avoid loud noise; this can worsen headaches.",
+      "Don't skip meals.",
+      "Consult doctor if severe."
+    ],
+    "video": "https://youtu.be/pKq07s3qWik?si=zRaB5RtYc6RjXcHc",
+    "category": "Neurological",
+    "severity": 1,
+    "icon": "brain",
+    "keywords": [
+      "headache",
+      "head ache",
+      "sir dard",
+      "sar dard",
+      "sardard",
+      "head pain",
+      "migraine",
+      "head hurts"
+    ],
+    "see_doctor": [
+      "Sudden, severe 'worst ever' headache",
+      "Headache with fever, stiff neck or vision changes",
+      "Headache after a head injury",
+      "Headaches that keep getting worse"
+    ]
+  },
+  {
+    "key": "stomach pain",
+    "slug": "stomach-pain",
+    "disease": "Indigestion or Gastric Infection",
+    "description": "Abdominal pain due to digestion issues.",
+    "precautions": [
+      "Avoid spicy food.",
+      "Avoid physical activity and let your stomach relax.",
+      "For mild pain, medicines like Dicycloverine (for cramps) and Paracetamol may help.",
+      "Drink clean water.",
+      "Avoid gas-forming foods like beans, carbonated drinks and junk foods.",
+      "Eat slowly and in small portions.",
+      "Wash your hands properly to avoid infections.",
+      "Eat light meals.",
+      "Consult doctor if severe."
+    ],
+    "video": "https://youtube.com/shorts/CC2IhNJyZsA?si=jAQoHy4sadqlPRNY",
+    "category": "Digestive",
+    "severity": 2,
+    "icon": "stomach",
+    "keywords": [
+      "stomach pain",
+      "stomach ache",
+      "stomachache",
+      "pet dard",
+      "pet me dard",
+      "abdominal pain",
+      "tummy ache",
+      "belly pain",
+      "stomach cramps"
+    ],
+    "see_doctor": [
+      "Severe or constant pain that keeps increasing",
+      "Pain with fever, vomiting or blood in stool",
+      "Pain on the lower right side (possible appendicitis)",
+      "Swollen, hard abdomen"
+    ]
+  },
+  {
+    "key": "malaria",
+    "slug": "malaria",
+    "disease": "Malaria",
+    "description": "A mosquito-borne disease caused by parasites.",
+    "precautions": [
+      "Sleep under mosquito nets.",
+      "Avoid stagnant water.",
+      "Use repellents.",
+      "Do not allow water to collect in coolers, buckets or pots-mosquitoes breed in stagnant water.",
+      "Keep surrounding clean.",
+      "Stay hydrated.",
+      "Get tested early as soon as possible.",
+      "Consult doctor immediately."
+    ],
+    "video": "https://youtu.be/z5Ixzyfu5dk?si=PB1KzgTyBspPHUlz",
+    "category": "Infection",
+    "severity": 3,
+    "icon": "mosquito",
+    "keywords": [
+      "malaria",
+      "shivering fever",
+      "chills and fever",
+      "fever with chills",
+      "mosquito bite",
+      "mosquito fever"
+    ],
+    "see_doctor": [
+      "Any fever after mosquito exposure — get tested promptly",
+      "Repeated shivering with high fever",
+      "Yellow skin/eyes, confusion or very dark urine"
+    ]
+  },
+  {
+    "key": "dizziness",
+    "slug": "dizziness",
+    "disease": "Dizziness / Vertigo",
+    "description": "Dizziness is a feeling of being lightheaded, unsteady, or losing balance. It can be caused by dehydration, low blood pressure, or inner ear problems.",
+    "precautions": [
+      "Stay well hydrated throughout the day.",
+      "Get up slowly to avoid sudden drops in blood pressure (Orthostatic Hypotension)",
+      "Eat regular, balanced meals to maintain sugar levels.",
+      "Avoid skipping meals or long fasting periods.",
+      "Limit caffeine and alcohol intake.",
+      "Get enough sleep and rest daily.",
+      "Avoid sudden head movements or quick position changes.",
+      "Sit or lie down immediately if you feel dizzy.",
+      "Manage stress and anxiety effectively.",
+      "Consult a doctor if dizziness is frequent."
+    ],
+    "video": "https://youtu.be/o4GV-EbnMfI?si=GHib2D2RAHR_6ink",
+    "category": "Neurological",
+    "severity": 1,
+    "icon": "brain",
+    "keywords": [
+      "dizzy",
+      "dizziness",
+      "vertigo",
+      "chakkar",
+      "chakkar aana",
+      "lightheaded",
+      "light headed",
+      "spinning",
+      "giddy"
+    ],
+    "see_doctor": [
+      "Dizziness with chest pain, fainting or slurred speech",
+      "Frequent or worsening episodes",
+      "Dizziness after a head injury"
+    ]
+  },
+  {
+    "key": "low blood pressure",
+    "slug": "low-blood-pressure",
+    "disease": "Hypotension",
+    "description": "Low blood pressure can cause dizziness.",
+    "precautions": [
+      "Drink plenty of water throughout the day. Dehydration is a major cause of low BP.",
+      "Unlike high BP patients, people with low BP may benefit from slightly higher salt—but only under a doctor’s guidance.",
+      "Large meals can cause a sudden drop in blood pressure. Eat smaller meals more often.",
+      "Getting up too quickly can lead to dizziness (called Orthostatic Hypotension). Rise slowly from sitting or lying positions.",
+      "Caffeine can temporarily increase blood pressure. Useful during sudden drops (but don’t overdo it).",
+      "Light activities like walking or yoga improve circulation and stabilize BP.",
+      "Regularly check your BP to understand patterns and triggers.",
+      "Consult doctor."
+    ],
+    "video": "https://youtu.be/0HY91UCJseo?si=k0n7N7pk4OoW7cUr",
+    "category": "Heart & BP",
+    "severity": 2,
+    "icon": "heart",
+    "keywords": [
+      "low blood pressure",
+      "low bp",
+      "low pressure",
+      "hypotension",
+      "bp low"
+    ],
+    "see_doctor": [
+      "Fainting or near-fainting episodes",
+      "Low BP with chest pain or shortness of breath",
+      "Cold, clammy, pale skin with rapid breathing"
+    ]
+  },
+  {
+    "key": "diabetes",
+    "slug": "diabetes",
+    "disease": "Diabetes",
+    "description": "Diabetes is a condition where blood sugar levels are too high.",
+    "precautions": [
+      "Avoid sugary foods.",
+      "Drink juice of Bitter Gourd if possible.",
+      "Eat more: whole grains, vegetables, fruits (low GI)",
+      "At least 30 minutes (walking, cycling, yoga). Helps control sugar and improves insulin sensitivity.",
+      "Water helps flush excess sugar through urine.",
+      "Avoid smoking and alcohol.",
+      "Stress can increase blood sugar. Try meditation, breathing exercises, or relaxation techniques.",
+      "Consult doctor regularly."
+    ],
+    "video": "https://youtube.com/shorts/HC7HLedb-O8?si=2zaPdMB463QD1EWd",
+    "category": "Chronic",
+    "severity": 2,
+    "icon": "drop",
+    "keywords": [
+      "diabetes",
+      "diabetic",
+      "high sugar",
+      "blood sugar",
+      "sugar problem",
+      "madhumeh",
+      "frequent urination",
+      "excessive thirst",
+      "always thirsty"
+    ],
+    "see_doctor": [
+      "Blood sugar repeatedly above target range",
+      "Extreme thirst, frequent urination, blurry vision",
+      "Fruity breath, confusion or vomiting (emergency)"
+    ]
+  },
+  {
+    "key": "high blood pressure",
+    "slug": "high-blood-pressure",
+    "disease": "Hypertension",
+    "description": "High blood pressure increases risk of heart disease.",
+    "precautions": [
+      "Reduce salt intake.",
+      "At least 30 minutes (walking, jogging, yoga). Helps lower BP naturally.",
+      "Losing even a few kilos can significantly reduce blood pressure.",
+      "Smoking damages blood vessels and increases heart risk.",
+      "Get proper sleep. Poor sleep can worsen BP. Aim for 7–8 hours daily.",
+      "Consult doctor regularly."
+    ],
+    "video": "https://youtu.be/E9zzPKiAGdY?si=tjvRFm58MnZs4sK2",
+    "category": "Heart & BP",
+    "severity": 2,
+    "icon": "heart",
+    "keywords": [
+      "high blood pressure",
+      "high bp",
+      "high pressure",
+      "hypertension",
+      "bp high"
+    ],
+    "see_doctor": [
+      "Readings consistently above 140/90 mmHg",
+      "Severe headache, chest pain or vision problems with high BP",
+      "Readings above 180/120 mmHg (seek urgent care)"
+    ]
+  },
+  {
+    "key": "cold",
+    "slug": "cold",
+    "disease": "Common Cold",
+    "description": "A viral infection causing sneezing and runny nose.",
+    "precautions": [
+      "Avoid cold weather exposure. Keep your body, especially throat and chest, warm.",
+      "Warm water, soups, and herbal teas help loosen mucus and keep you hydrated.",
+      "Your body heals faster when you rest. Avoid heavy work and stress.",
+      "Eat light and nutritious food.",
+      "Take steam 1–2 times daily to relieve nasal congestion.",
+      "Gargle with warm salt water.",
+      "Stay away from ice cream, cold drinks, and refrigerated items.",
+      "Wear a mask if needed—dust can worsen symptoms."
+    ],
+    "video": "https://youtu.be/WNXFsCoJv8U?si=nQfgTuaVamuJd1l0",
+    "category": "Respiratory",
+    "severity": 1,
+    "icon": "lungs",
+    "keywords": [
+      "common cold",
+      "cold",
+      "runny nose",
+      "sneezing",
+      "blocked nose",
+      "stuffy nose",
+      "zukam",
+      "jukam",
+      "nazla"
+    ],
+    "see_doctor": [
+      "Symptoms lasting more than 10 days",
+      "Fever above 101°F with cold",
+      "Severe sinus pain or ear pain"
+    ]
+  },
+  {
+    "key": "asthma",
+    "slug": "asthma",
+    "disease": "Asthma",
+    "description": "A condition where airways become inflamed.",
+    "precautions": [
+      "Follow your doctor’s instructions for inhalers (e.g., Salbutamol) to quickly relieve symptoms.",
+      "Avoid dust and smoke.",
+      "Wear a mask in pollution.",
+      "Stay away from smoking and second-hand smoke—it’s a major trigger.",
+      "Light exercise like walking or yoga is beneficial, but avoid overexertion.",
+      "Stress can trigger asthma attacks. Practice breathing exercises or meditation.",
+      "Flu or infections can worsen asthma. Annual flu shots are helpful.",
+      "Track breathing patterns and warning signs like wheezing or shortness of breath."
+    ],
+    "video": "https://youtube.com/shorts/MJyyV3TxNII?si=OoriSLjyGw9C5Suu",
+    "category": "Respiratory",
+    "severity": 3,
+    "icon": "lungs",
+    "keywords": [
+      "asthma",
+      "wheezing",
+      "wheeze",
+      "dama",
+      "breathless",
+      "breathlessness",
+      "tight chest"
+    ],
+    "see_doctor": [
+      "Inhaler not giving relief",
+      "Struggling to speak or breathe (emergency)",
+      "Lips or fingertips turning blue",
+      "Night-time symptoms increasing"
+    ]
+  },
+  {
+    "key": "dengue",
+    "slug": "dengue",
+    "disease": "Dengue Fever",
+    "description": "A mosquito-borne viral disease.",
+    "precautions": [
+      "Avoid mosquito bites.",
+      "Avoid stagnant water. Mosquitoes breed in standing water.",
+      "Sleep under nets and install window screens to stay protected.",
+      "Rest is essential for recovery and boosting immunity.",
+      "Regular blood tests are important, as dengue can lower platelets.",
+      "Eat light and nutritious food.",
+      "Always consult a doctor—dengue can become serious if not treated properly."
+    ],
+    "video": "https://youtu.be/6-MX2MJOpQk?si=htUZRbNg6TmHL1rg",
+    "category": "Infection",
+    "severity": 3,
+    "icon": "mosquito",
+    "keywords": [
+      "dengue",
+      "low platelets",
+      "platelet",
+      "bone pain",
+      "joint pain",
+      "breakbone"
+    ],
+    "see_doctor": [
+      "Fever with severe body/joint pain and rash",
+      "Bleeding gums/nose, black stools or severe abdominal pain",
+      "Platelet count dropping in a blood test"
+    ]
+  },
+  {
+    "key": "hairfall",
+    "slug": "hairfall",
+    "disease": "Hair Loss (Alopecia)",
+    "description": "Hair fall can occur due to stress, poor diet, hormonal imbalance, or genetics.",
+    "precautions": [
+      "Maintain a healthy diet rich in protein and vitamins.",
+      "Avoid excessive use of hair styling products.",
+      "Reduce stress through exercise or meditation.",
+      "Handle wet hair gently to prevent breakage.",
+      "Use mild, sulfate-free shampoo.",
+      "Oil your hair regularly to nourish roots.",
+      "Reduce stress to avoid Telogen Effluvium.",
+      "Avoid tight hairstyles that pull hair roots.",
+      "Stay well hydrated daily.",
+      "Check for underlying issues like anemia or thyroid problems.",
+      "Use natural remedies like aloe vera or amla.",
+      "Use mild shampoos and avoid harsh chemicals.",
+      "Consult a doctor if hair fall is severe."
+    ],
+    "video": "https://youtube.com/shorts/GCrSmd-R1vM?si=QihpGctgvYyr9RFJ",
+    "category": "Skin & Hair",
+    "severity": 1,
+    "icon": "sparkle",
+    "keywords": [
+      "hairfall",
+      "hair fall",
+      "hair loss",
+      "hair falling",
+      "baal jhadna",
+      "baal girna",
+      "balding",
+      "alopecia"
+    ],
+    "see_doctor": [
+      "Sudden patchy hair loss",
+      "Hair loss with scalp pain, redness or scaling",
+      "Hair loss along with fatigue or weight changes"
+    ]
+  },
+  {
+    "key": "sore throat",
+    "slug": "sore-throat",
+    "disease": "Pharyngitis (Sore Throat)",
+    "description": "A painful, scratchy or irritated throat, most often caused by a viral infection, allergies or dry air.",
+    "precautions": [
+      "Gargle with warm salt water 3-4 times a day.",
+      "Sip warm fluids such as tea with honey, soup or warm water.",
+      "Rest your voice and stay well hydrated.",
+      "Use throat lozenges or a humidifier for comfort.",
+      "Avoid smoking, cold drinks and very spicy food.",
+      "Avoid sharing utensils to prevent spreading infection.",
+      "Consult a doctor if pain lasts more than a week or swallowing becomes hard."
+    ],
+    "video": null,
+    "category": "Respiratory",
+    "severity": 1,
+    "icon": "lungs",
+    "keywords": [
+      "sore throat",
+      "throat pain",
+      "throat infection",
+      "gala dard",
+      "gale me dard",
+      "scratchy throat",
+      "painful swallowing",
+      "tonsil"
+    ],
+    "see_doctor": [
+      "Difficulty swallowing or breathing",
+      "Sore throat lasting more than 7 days",
+      "High fever, swollen glands or white patches on tonsils"
+    ]
+  },
+  {
+    "key": "diarrhea",
+    "slug": "diarrhea",
+    "disease": "Diarrhea / Loose Motions",
+    "description": "Frequent watery stools, commonly due to infection, contaminated food or water, or a sensitive stomach.",
+    "precautions": [
+      "Drink ORS or clean water in small, frequent sips.",
+      "Eat light foods like rice, banana, curd and toast.",
+      "Wash hands thoroughly with soap before eating and after the toilet.",
+      "Drink only boiled or filtered water.",
+      "Avoid oily, spicy and street food until recovered.",
+      "Avoid milk and caffeine while symptoms last.",
+      "Consult a doctor if it lasts more than 2 days."
+    ],
+    "video": null,
+    "category": "Digestive",
+    "severity": 2,
+    "icon": "stomach",
+    "keywords": [
+      "diarrhea",
+      "diarrhoea",
+      "loose motion",
+      "loose motions",
+      "loose stools",
+      "watery stool",
+      "dast",
+      "patla potty"
+    ],
+    "see_doctor": [
+      "Blood or mucus in stool",
+      "Signs of dehydration: dry mouth, very little urine, dizziness",
+      "Diarrhea for more than 2 days or with high fever",
+      "Infants, elderly or pregnant women with diarrhea"
+    ]
+  },
+  {
+    "key": "back pain",
+    "slug": "back-pain",
+    "disease": "Back Pain / Muscle Strain",
+    "description": "Aching or stiffness in the back, often from poor posture, muscle strain or long hours of sitting.",
+    "precautions": [
+      "Stay gently active; walking is better than complete bed rest.",
+      "Apply a warm compress or heating pad for 15-20 minutes.",
+      "Sit with proper back support and take breaks every 30-45 minutes.",
+      "Do light stretching or yoga for the lower back.",
+      "Avoid lifting heavy objects with a bent back.",
+      "Avoid sleeping on a very soft mattress.",
+      "Consult a doctor if pain lasts more than 2 weeks."
+    ],
+    "video": null,
+    "category": "Musculoskeletal",
+    "severity": 1,
+    "icon": "bone",
+    "keywords": [
+      "back pain",
+      "backache",
+      "back ache",
+      "kamar dard",
+      "kamar me dard",
+      "lower back pain",
+      "spine pain",
+      "muscle strain"
+    ],
+    "see_doctor": [
+      "Numbness, tingling or weakness in legs",
+      "Loss of bladder or bowel control (emergency)",
+      "Pain after a fall or injury",
+      "Back pain with fever or unexplained weight loss"
+    ]
+  },
+  {
+    "key": "skin allergy",
+    "slug": "skin-allergy",
+    "disease": "Skin Allergy / Rash",
+    "description": "Itchy, red or bumpy skin caused by allergens, irritants, insect bites or infections.",
+    "precautions": [
+      "Wash the area gently with mild soap and cool water.",
+      "Apply a soothing moisturizer or calamine lotion.",
+      "Wear loose, breathable cotton clothing.",
+      "Avoid scratching to prevent infection.",
+      "Avoid known triggers such as certain soaps, fabrics or foods.",
+      "Keep your nails short and clean.",
+      "Consult a doctor if the rash spreads fast, blisters or lasts more than a week."
+    ],
+    "video": null,
+    "category": "Skin & Hair",
+    "severity": 1,
+    "icon": "sparkle",
+    "keywords": [
+      "skin allergy",
+      "rash",
+      "skin rash",
+      "itching",
+      "itchy skin",
+      "khujli",
+      "hives",
+      "allergy",
+      "red patches"
+    ],
+    "see_doctor": [
+      "Swelling of lips/face or trouble breathing (emergency)",
+      "Rash with fever or blisters",
+      "Rapidly spreading rash",
+      "Signs of infection: pus, warmth, increasing pain"
+    ]
+  },
+  {
+    "key": "acidity",
+    "slug": "acidity",
+    "disease": "Acidity / Acid Reflux (GERD)",
+    "description": "A burning feeling in the chest or throat caused by stomach acid flowing back, usually after heavy, spicy or irregular meals.",
+    "precautions": [
+      "Eat smaller meals at regular times.",
+      "Wait at least 2-3 hours after dinner before lying down.",
+      "Raise the head of your bed slightly while sleeping.",
+      "Drink cold milk or a glass of water to soothe the burn.",
+      "Avoid spicy, oily food, citrus, chocolate and carbonated drinks.",
+      "Avoid smoking, alcohol and excess tea/coffee.",
+      "Consult a doctor if symptoms occur more than twice a week."
+    ],
+    "video": null,
+    "category": "Digestive",
+    "severity": 1,
+    "icon": "stomach",
+    "keywords": [
+      "acidity",
+      "acid reflux",
+      "gerd",
+      "heartburn",
+      "chest burning",
+      "seene me jalan",
+      "gas problem",
+      "sour belching",
+      "bloating",
+      "gas"
+    ],
+    "see_doctor": [
+      "Difficulty or pain when swallowing",
+      "Black stools or vomiting blood",
+      "Unplanned weight loss",
+      "Chest pain spreading to arm or jaw (emergency)"
+    ]
+  },
+  {
+    "key": "stress",
+    "slug": "stress",
+    "disease": "Stress / Anxiety",
+    "description": "Persistent worry, tension or restlessness that can affect sleep, concentration and physical health.",
+    "precautions": [
+      "Practice slow breathing: inhale for 4 seconds, hold 4, exhale 6.",
+      "Take a 20-30 minute walk or do yoga daily.",
+      "Keep a regular sleep schedule of 7-8 hours.",
+      "Talk to a friend, family member or counsellor.",
+      "Limit caffeine, alcohol and late-night screen time.",
+      "Break big tasks into smaller steps and take breaks.",
+      "Consult a mental-health professional if it affects daily life."
+    ],
+    "video": null,
+    "category": "Mental Health",
+    "severity": 2,
+    "icon": "brain",
+    "keywords": [
+      "stress",
+      "anxiety",
+      "anxious",
+      "tension",
+      "panic",
+      "overthinking",
+      "depressed",
+      "low mood",
+      "cannot sleep",
+      "insomnia",
+      "nind nahi aati"
+    ],
+    "see_doctor": [
+      "Thoughts of self-harm (contact a helpline immediately)",
+      "Panic attacks or sleep problems lasting weeks",
+      "Anxiety that stops you from working or studying"
+    ]
+  }
+]

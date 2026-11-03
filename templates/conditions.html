@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %}Conditions Library · AI Health Assistant{% endblock %}
+{% block content %}
+<section class="wrap">
+  <div class="page-head">
+    <span class="eyebrow">Library</span>
+    <h1 class="page-h">Browse <span class="grad">{{ conditions|length }} conditions</span></h1>
+    <p class="lead">Quick self-care guidance, warning signs and videos for common health problems.</p>
+  </div>
+  <div class="filter-bar">
+    <label class="search"><svg class="ic"><use href="#i-search"/></svg>
+      <input type="search" id="condSearch" placeholder="Search conditions or symptoms…" autocomplete="off"></label>
+    <div class="chips-row" id="catChips">
+      <button class="chip is-on" type="button" data-cat="all">All</button>
+      {% for cat in categories %}<button class="chip" type="button" data-cat="{{ cat }}">{{ cat }}</button>{% endfor %}
+    </div>
+  </div>
+  <div class="grid-cards" id="condGrid">
+    {% for c in conditions %}
+    <a class="mini-card reveal" href="{{ url_for('condition', slug=c.slug) }}" data-cat="{{ c.category }}"
+       data-text="{{ (c.disease ~ ' ' ~ c.keywords|join(' ') ~ ' ' ~ c.category)|lower }}">
+      <span class="badge-ic cat-{{ c.category|lower|replace(' & ','-')|replace(' ','-') }}"><svg class="ic"><use href="#i-{{ c.icon }}"/></svg></span>
+      <b>{{ c.disease }}</b>
+      <small>{{ c.description }}</small>
+      <span class="mini-foot"><span class="pill">{{ c.category }}</span><span class="sev sev-{{ c.severity_class }}"><span class="sev-dots">{% for i in range(1,4) %}<i class="{{ 'on' if i <= c.severity }}"></i>{% endfor %}</span></span></span>
+    </a>
+    {% endfor %}
+  </div>
+  <p class="empty-note" id="condEmpty" hidden>No conditions match your search.</p>
+</section>
+{% endblock %}
